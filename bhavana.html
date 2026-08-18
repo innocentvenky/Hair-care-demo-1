@@ -1,0 +1,3475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VJSS Hair Care | Natural Hair & Scalp Care</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --primary:#174c3b;
+    --secondary:#2d7a5b;
+    --light:#f4f8f3;
+    --cream:#fffaf1;
+    --gold:#d5a84a;
+    --dark:#17231e;
+    --text:#52615a;
+    --white:#ffffff;
+    --shadow:0 10px 30px rgba(0,0,0,.10);
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:var(--dark);
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.97);
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.nav-container{
+    max-width:1250px;
+    margin:auto;
+    padding:15px 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:27px;
+    font-weight:bold;
+    color:var(--primary);
+}
+
+.logo-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:var(--primary);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#263b32;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.nav-actions{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+
+.search-box{
+    display:flex;
+    border:1px solid #ddd;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.search-box input{
+    width:150px;
+    border:0;
+    outline:0;
+    padding:9px 13px;
+}
+
+.search-box button{
+    border:0;
+    background:white;
+    padding:8px 12px;
+    cursor:pointer;
+}
+
+.cart-btn{
+    border:0;
+    background:var(--primary);
+    color:white;
+    padding:10px 15px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.menu-btn{
+    display:none;
+    font-size:25px;
+    border:0;
+    background:none;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:620px;
+    background:
+    linear-gradient(90deg,rgba(15,53,40,.95),rgba(15,53,40,.65),rgba(15,53,40,.15)),
+    url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1800&q=85");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:1250px;
+    width:100%;
+    margin:auto;
+    padding:40px 25px;
+    color:white;
+}
+
+.hero-content small{
+    color:#e6c879;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.hero-content h1{
+    font-size:58px;
+    max-width:700px;
+    margin:18px 0;
+    line-height:1.05;
+}
+
+.hero-content p{
+    max-width:650px;
+    font-size:19px;
+    line-height:1.7;
+    color:#edf4ef;
+}
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    border:0;
+    padding:14px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.btn-primary{
+    background:#e1bb62;
+    color:#17231e;
+}
+
+.btn-outline{
+    background:transparent;
+    color:white;
+    border:1px solid white;
+}
+
+/* ================= COMMON ================= */
+
+.section{
+    padding:80px 25px;
+}
+
+.container{
+    max-width:1250px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title span{
+    color:var(--secondary);
+    font-weight:bold;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin:10px 0;
+}
+
+.section-title p{
+    color:var(--text);
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-top:-45px;
+    position:relative;
+}
+
+.feature{
+    background:white;
+    box-shadow:var(--shadow);
+    border-radius:15px;
+    padding:30px 20px;
+    text-align:center;
+}
+
+.feature-icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.feature h3{
+    margin-bottom:10px;
+}
+
+.feature p{
+    color:var(--text);
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:var(--light);
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:25px;
+}
+
+.about-text h2{
+    font-size:40px;
+    margin:15px 0;
+}
+
+.about-text p{
+    color:var(--text);
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.about-list{
+    list-style:none;
+    margin-top:20px;
+}
+
+.about-list li{
+    margin:13px 0;
+    font-weight:600;
+}
+
+/* ================= PRODUCTS ================= */
+
+.product-section{
+    background:#fff;
+}
+
+.category-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+}
+
+.category-buttons button{
+    padding:10px 20px;
+    border-radius:25px;
+    border:1px solid #cddbd4;
+    background:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.category-buttons button.active,
+.category-buttons button:hover{
+    background:var(--primary);
+    color:white;
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.product-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-7px);
+}
+
+.product-image{
+    height:260px;
+    position:relative;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product-card:hover img{
+    transform:scale(1.06);
+}
+
+.badge{
+    position:absolute;
+    top:12px;
+    left:12px;
+    background:#e1bb62;
+    padding:6px 10px;
+    border-radius:15px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info .category{
+    color:var(--secondary);
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.product-info h3{
+    margin:8px 0;
+    font-size:19px;
+}
+
+.product-info p{
+    color:var(--text);
+    font-size:13px;
+    line-height:1.5;
+    min-height:40px;
+}
+
+.price{
+    color:var(--primary);
+    font-size:21px;
+    font-weight:bold;
+    margin:13px 0;
+}
+
+.product-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.product-buttons button{
+    flex:1;
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.details-btn{
+    border:1px solid var(--primary);
+    background:white;
+    color:var(--primary);
+}
+
+.add-btn{
+    border:0;
+    background:var(--primary);
+    color:white;
+}
+
+/* ================= HAIR STAGES ================= */
+
+.stages{
+    background:var(--cream);
+}
+
+.stage-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stage-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    position:relative;
+}
+
+.stage-number{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:var(--primary);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.stage-card h3{
+    margin-bottom:10px;
+}
+
+.stage-card p{
+    color:var(--text);
+    line-height:1.6;
+    font-size:14px;
+}
+
+.stage-card .tip{
+    margin-top:15px;
+    background:#edf7f0;
+    padding:12px;
+    border-radius:10px;
+    font-size:13px;
+}
+
+/* ================= BEFORE AFTER ================= */
+
+.results{
+    background:var(--light);
+}
+
+.results-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+}
+
+.result-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.result-images{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.result-images div{
+    position:relative;
+}
+
+.result-images img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.image-label{
+    position:absolute;
+    bottom:8px;
+    left:8px;
+    background:rgba(0,0,0,.7);
+    color:white;
+    padding:5px 8px;
+    border-radius:5px;
+    font-size:11px;
+}
+
+.result-info{
+    padding:15px;
+}
+
+.result-info h3{
+    margin-bottom:7px;
+}
+
+.result-info p{
+    color:var(--text);
+    font-size:13px;
+    line-height:1.5;
+}
+
+/* ================= ROUTINE ================= */
+
+.routine{
+    background:white;
+}
+
+.routine-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+.routine-card{
+    text-align:center;
+    padding:25px 15px;
+    border:1px solid #e0e9e3;
+    border-radius:18px;
+}
+
+.routine-icon{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.routine-card h3{
+    margin-bottom:10px;
+}
+
+.routine-card p{
+    color:var(--text);
+    font-size:13px;
+    line-height:1.5;
+}
+
+/* ================= DETAILS MODAL ================= */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:3000;
+    padding:20px;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-content{
+    background:white;
+    width:100%;
+    max-width:1000px;
+    max-height:90vh;
+    overflow-y:auto;
+    border-radius:20px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:20px;
+    top:15px;
+    width:38px;
+    height:38px;
+    border:0;
+    background:#eee;
+    border-radius:50%;
+    font-size:22px;
+    cursor:pointer;
+    z-index:2;
+}
+
+.detail-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.detail-image{
+    min-height:550px;
+}
+
+.detail-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px 0 0 20px;
+}
+
+.detail-info{
+    padding:40px;
+}
+
+.detail-info .category{
+    color:var(--secondary);
+    font-weight:bold;
+}
+
+.detail-info h2{
+    font-size:35px;
+    margin:10px 0;
+}
+
+.detail-info .description{
+    color:var(--text);
+    line-height:1.7;
+    margin:20px 0;
+}
+
+.detail-list{
+    margin:15px 0;
+    padding-left:20px;
+    color:var(--text);
+    line-height:1.8;
+}
+
+.detail-box{
+    background:#f4f8f3;
+    padding:15px;
+    border-radius:12px;
+    margin:12px 0;
+}
+
+.detail-box strong{
+    color:var(--primary);
+}
+
+/* ================= CART ================= */
+
+.cart-panel{
+    position:fixed;
+    right:-450px;
+    top:0;
+    height:100%;
+    width:420px;
+    background:white;
+    z-index:2500;
+    box-shadow:-10px 0 30px rgba(0,0,0,.2);
+    transition:.4s;
+    display:flex;
+    flex-direction:column;
+}
+
+.cart-panel.open{
+    right:0;
+}
+
+.cart-header{
+    padding:22px;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #ddd;
+}
+
+.cart-header button{
+    border:0;
+    background:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.cart-items{
+    flex:1;
+    overflow-y:auto;
+    padding:20px;
+}
+
+.cart-item{
+    display:flex;
+    gap:12px;
+    border-bottom:1px solid #eee;
+    padding:15px 0;
+}
+
+.cart-item img{
+    width:70px;
+    height:70px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.cart-item-info{
+    flex:1;
+}
+
+.cart-item-info h4{
+    font-size:14px;
+}
+
+.cart-item-info p{
+    color:var(--primary);
+    font-weight:bold;
+    margin:6px 0;
+}
+
+.qty{
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+.qty button{
+    border:1px solid #ddd;
+    background:white;
+    width:25px;
+    height:25px;
+    cursor:pointer;
+}
+
+.remove{
+    color:#b33131;
+    border:0;
+    background:none;
+    cursor:pointer;
+}
+
+.cart-footer{
+    padding:20px;
+    border-top:1px solid #ddd;
+}
+
+.cart-total{
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.checkout{
+    width:100%;
+    padding:14px;
+    background:var(--primary);
+    color:white;
+    border:0;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* ================= CHATBOT ================= */
+
+.chat-button{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:var(--primary);
+    color:white;
+    border:0;
+    font-size:28px;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    z-index:2000;
+}
+
+.chat-window{
+    position:fixed;
+    right:25px;
+    bottom:100px;
+    width:360px;
+    height:500px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,.25);
+    overflow:hidden;
+    display:none;
+    flex-direction:column;
+    z-index:2000;
+}
+
+.chat-window.open{
+    display:flex;
+}
+
+.chat-header{
+    background:var(--primary);
+    color:white;
+    padding:17px;
+}
+
+.chat-header h3{
+    margin-bottom:4px;
+}
+
+.chat-header small{
+    opacity:.8;
+}
+
+.chat-messages{
+    flex:1;
+    padding:15px;
+    overflow-y:auto;
+    background:#f7faf7;
+}
+
+.message{
+    max-width:85%;
+    padding:10px 13px;
+    border-radius:13px;
+    margin-bottom:10px;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.bot{
+    background:white;
+    color:#26352e;
+    border:1px solid #e4ebe6;
+}
+
+.user{
+    background:var(--primary);
+    color:white;
+    margin-left:auto;
+}
+
+.chat-input{
+    display:flex;
+    border-top:1px solid #ddd;
+}
+
+.chat-input input{
+    flex:1;
+    border:0;
+    padding:13px;
+    outline:0;
+}
+
+.chat-input button{
+    border:0;
+    background:var(--primary);
+    color:white;
+    padding:0 18px;
+    cursor:pointer;
+}
+
+/* ================= FAQ ================= */
+
+.faq{
+    background:var(--cream);
+}
+
+.faq-container{
+    max-width:850px;
+    margin:auto;
+}
+
+.faq-item{
+    background:white;
+    margin-bottom:12px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.faq-question{
+    width:100%;
+    text-align:left;
+    padding:18px;
+    border:0;
+    background:white;
+    font-weight:bold;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+}
+
+.faq-answer{
+    display:none;
+    padding:0 18px 18px;
+    color:var(--text);
+    line-height:1.6;
+}
+
+.faq-item.open .faq-answer{
+    display:block;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#102f25;
+    color:white;
+    padding:60px 25px 20px;
+}
+
+.footer-grid{
+    max-width:1250px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-column h3{
+    margin-bottom:18px;
+}
+
+.footer-column p,
+.footer-column li{
+    color:#c8d6cf;
+    line-height:1.7;
+    font-size:14px;
+}
+
+.footer-column ul{
+    list-style:none;
+}
+
+.footer-column li{
+    margin-bottom:8px;
+}
+
+.footer-bottom{
+    max-width:1250px;
+    margin:40px auto 0;
+    border-top:1px solid rgba(255,255,255,.15);
+    padding-top:20px;
+    text-align:center;
+    color:#aebdb6;
+    font-size:13px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .products-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .stage-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .results-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .routine-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:700px){
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .search-box{
+        display:none;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .about-grid,
+    .detail-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-image img{
+        height:350px;
+    }
+
+    .products-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .stage-grid{
+        grid-template-columns:1fr;
+    }
+
+    .results-grid{
+        grid-template-columns:1fr;
+    }
+
+    .routine-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .detail-image{
+        min-height:350px;
+    }
+
+    .detail-image img{
+        border-radius:20px 20px 0 0;
+    }
+
+    .cart-panel{
+        width:100%;
+        right:-100%;
+    }
+
+    .chat-window{
+        right:10px;
+        left:10px;
+        width:auto;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:450px){
+
+    .products-grid{
+        grid-template-columns:1fr;
+    }
+
+    .routine-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+<div class="nav-container">
+
+    <div class="logo">
+        <div class="logo-icon">V</div>
+        VJSS
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#stages">Hair Stages</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#routine">Routine</a></li>
+    </ul>
+
+    <div class="nav-actions">
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+
+        <button class="cart-btn" onclick="openCart()">
+            🛒 Cart <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-btn">☰</button>
+
+    </div>
+
+</div>
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+    <small>WELCOME TO VJSS HAIR CARE</small>
+
+    <h1>
+        Stronger Hair Starts With Better Care.
+    </h1>
+
+    <p>
+        VJSS Hair Care is a modern hair and scalp care brand focused on
+        helping men and women build simple, consistent hair-care routines.
+        Explore shampoos, oils, serums, masks and complete hair-care solutions.
+    </p>
+
+    <div class="hero-buttons">
+        <button class="btn btn-primary"
+                onclick="document.getElementById('products').scrollIntoView()">
+            Explore Products
+        </button>
+
+        <button class="btn btn-outline"
+                onclick="document.getElementById('stages').scrollIntoView()">
+            Understand Your Hair
+        </button>
+    </div>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<div class="container">
+
+<div class="features">
+
+    <div class="feature">
+        <div class="feature-icon">🌿</div>
+        <h3>Plant Inspired</h3>
+        <p>Hair-care formulas inspired by traditional botanical ingredients.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🧪</div>
+        <h3>Research Focused</h3>
+        <p>Designed around practical scalp and hair-care routines.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">👩‍🦱</div>
+        <h3>For Women</h3>
+        <p>Solutions for different hair textures and routine needs.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">👨‍🦱</div>
+        <h3>For Men</h3>
+        <p>Simple everyday care for men's scalp and hair.</p>
+    </div>
+
+</div>
+
+</div>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about" id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+    <div class="about-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1000&q=85"
+        alt="VJSS hair care">
+
+    </div>
+
+    <div class="about-text">
+
+        <span>ABOUT VJSS</span>
+
+        <h2>Hair Care Designed Around Your Routine</h2>
+
+        <p>
+            VJSS Hair Care is a conceptual personal-care brand created around
+            the idea that healthy-looking hair begins with understanding the
+            scalp, hair type and daily habits.
+        </p>
+
+        <p>
+            Our product range combines everyday cleansing, conditioning,
+            nourishment and scalp-care products so customers can create a
+            routine that fits their individual needs.
+        </p>
+
+        <p>
+            Instead of treating hair care as a single product, VJSS presents
+            a complete journey — understand your hair, choose suitable
+            products, follow a consistent routine and monitor changes over
+            time.
+        </p>
+
+        <ul class="about-list">
+            <li>✓ Hair and scalp focused approach</li>
+            <li>✓ Products for men and women</li>
+            <li>✓ Easy-to-understand hair stages</li>
+            <li>✓ Complete daily and weekly routines</li>
+            <li>✓ Product education before purchase</li>
+        </ul>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="section product-section" id="products">
+
+<div class="container">
+
+<div class="section-title">
+
+    <span>VJSS COLLECTION</span>
+
+    <h2>20 Hair Care Products</h2>
+
+    <p>
+        Explore our complete range of shampoos, oils, serums, masks,
+        conditioners and scalp-care products.
+    </p>
+
+</div>
+
+<div class="category-buttons">
+
+    <button class="active" onclick="filterProducts('all',this)">
+        All
+    </button>
+
+    <button onclick="filterProducts('shampoo',this)">
+        Shampoos
+    </button>
+
+    <button onclick="filterProducts('oil',this)">
+        Oils
+    </button>
+
+    <button onclick="filterProducts('serum',this)">
+        Serums
+    </button>
+
+    <button onclick="filterProducts('mask',this)">
+        Masks
+    </button>
+
+    <button onclick="filterProducts('conditioner',this)">
+        Conditioners
+    </button>
+
+    <button onclick="filterProducts('men',this)">
+        Men
+    </button>
+
+    <button onclick="filterProducts('women',this)">
+        Women
+    </button>
+
+</div>
+
+<div class="products-grid" id="productsGrid"></div>
+
+</div>
+
+</section>
+
+<!-- ================= HAIR STAGES ================= -->
+
+<section class="section stages" id="stages">
+
+<div class="container">
+
+<div class="section-title">
+
+    <span>KNOW YOUR HAIR</span>
+
+    <h2>Understand Your Hair Journey</h2>
+
+    <p>
+        Hair concerns can look different at different stages.
+        Understanding the stage can help you choose a suitable routine.
+    </p>
+
+</div>
+
+<div class="stage-grid">
+
+    <div class="stage-card">
+
+        <div class="stage-number">1</div>
+
+        <h3>Healthy & Balanced</h3>
+
+        <p>
+            Hair looks relatively full, manageable and naturally hydrated.
+            The main focus is maintaining the scalp and hair routine.
+        </p>
+
+        <div class="tip">
+            <strong>Routine:</strong>
+            Gentle shampoo + conditioner + occasional oiling.
+        </div>
+
+    </div>
+
+    <div class="stage-card">
+
+        <div class="stage-number">2</div>
+
+        <h3>Early Concerns</h3>
+
+        <p>
+            You may notice increased shedding, dryness, frizz or changes
+            in scalp oiliness.
+        </p>
+
+        <div class="tip">
+            <strong>Routine:</strong>
+            Focus on scalp cleansing, conditioning and consistent care.
+        </div>
+
+    </div>
+
+    <div class="stage-card">
+
+        <div class="stage-number">3</div>
+
+        <h3>Visible Thinning</h3>
+
+        <p>
+            Hair may appear less dense in particular areas and the scalp
+            may become more visible.
+        </p>
+
+        <div class="tip">
+            <strong>Routine:</strong>
+            Gentle care and professional evaluation when needed.
+        </div>
+
+    </div>
+
+    <div class="stage-card">
+
+        <div class="stage-number">4</div>
+
+        <h3>Advanced Hair Loss</h3>
+
+        <p>
+            Significant thinning or bald areas may be visible.
+            Cosmetic products alone may not address the underlying cause.
+        </p>
+
+        <div class="tip">
+            <strong>Important:</strong>
+            Consider consulting a qualified dermatologist.
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= RESULTS ================= -->
+
+<section class="section results" id="results">
+
+<div class="container">
+
+<div class="section-title">
+
+    <span>VJSS JOURNEY</span>
+
+    <h2>Before & After Inspiration</h2>
+
+    <p>
+        Example visual comparisons showing how a consistent hair-care
+        routine may change the appearance of hair over time.
+    </p>
+
+</div>
+
+<div class="results-grid">
+
+    <div class="result-card">
+
+        <div class="result-images">
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">BEFORE</span>
+            </div>
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">AFTER</span>
+            </div>
+
+        </div>
+
+        <div class="result-info">
+            <h3>Example 01</h3>
+            <p>
+                Focus: scalp cleansing and regular conditioning.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="result-card">
+
+        <div class="result-images">
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">BEFORE</span>
+            </div>
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">AFTER</span>
+            </div>
+
+        </div>
+
+        <div class="result-info">
+            <h3>Example 02</h3>
+            <p>
+                Focus: hydration and reducing the appearance of dryness.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="result-card">
+
+        <div class="result-images">
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">BEFORE</span>
+            </div>
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">AFTER</span>
+            </div>
+
+        </div>
+
+        <div class="result-info">
+            <h3>Example 03</h3>
+            <p>
+                Focus: nourishing hair lengths and improving manageability.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="result-card">
+
+        <div class="result-images">
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">BEFORE</span>
+            </div>
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">AFTER</span>
+            </div>
+
+        </div>
+
+        <div class="result-info">
+            <h3>Example 04</h3>
+            <p>
+                Focus: a consistent scalp-care and washing schedule.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="result-card">
+
+        <div class="result-images">
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">BEFORE</span>
+            </div>
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80">
+                <span class="image-label">AFTER</span>
+            </div>
+
+        </div>
+
+        <div class="result-info">
+            <h3>Example 05</h3>
+            <p>
+                Focus: overall hair-care consistency and routine tracking.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<p style="text-align:center;margin-top:25px;color:#69756f;font-size:13px;">
+    Note: These are illustrative website visuals, not guaranteed treatment results.
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= ROUTINE ================= -->
+
+<section class="section routine" id="routine">
+
+<div class="container">
+
+<div class="section-title">
+
+    <span>SIMPLE ROUTINE</span>
+
+    <h2>5 Steps For Everyday Hair Care</h2>
+
+</div>
+
+<div class="routine-grid">
+
+    <div class="routine-card">
+        <div class="routine-icon">🧴</div>
+        <h3>Cleanse</h3>
+        <p>
+            Use a suitable shampoo to keep the scalp clean.
+        </p>
+    </div>
+
+    <div class="routine-card">
+        <div class="routine-icon">💧</div>
+        <h3>Condition</h3>
+        <p>
+            Apply conditioner mainly to the hair lengths.
+        </p>
+    </div>
+
+    <div class="routine-card">
+        <div class="routine-icon">🌿</div>
+        <h3>Nourish</h3>
+        <p>
+            Use hair oil or a nourishing treatment when appropriate.
+        </p>
+    </div>
+
+    <div class="routine-card">
+        <div class="routine-icon">✨</div>
+        <h3>Protect</h3>
+        <p>
+            Minimize excessive heat and rough handling.
+        </p>
+    </div>
+
+    <div class="routine-card">
+        <div class="routine-icon">📅</div>
+        <h3>Be Consistent</h3>
+        <p>
+            Follow a practical routine and monitor changes.
+        </p>
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section class="section faq">
+
+<div class="container">
+
+<div class="section-title">
+
+    <span>FAQ</span>
+
+    <h2>Frequently Asked Questions</h2>
+
+</div>
+
+<div class="faq-container">
+
+    <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFAQ(this)">
+            Which VJSS product should I use first?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            Start by identifying your scalp and hair type. A basic routine
+            can begin with a suitable shampoo and conditioner before adding
+            oils, masks or serums.
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFAQ(this)">
+            Can men use the women's products?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            Most hair-care products are selected based on hair and scalp
+            needs rather than gender. Choose according to your hair type
+            and product instructions.
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFAQ(this)">
+            How frequently should I wash my hair?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            Washing frequency depends on scalp oiliness, activity level,
+            hair type and personal preference. Avoid choosing a schedule
+            solely because of a fixed number.
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFAQ(this)">
+            Will VJSS products guarantee hair regrowth?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            No cosmetic product can guarantee hair regrowth. Persistent,
+            sudden or significant hair loss should be discussed with a
+            qualified healthcare professional.
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+    <div class="footer-column">
+
+        <h3>VJSS Hair Care</h3>
+
+        <p>
+            VJSS Hair Care is a conceptual hair-care brand focused on
+            helping customers understand their hair and create practical
+            daily routines.
+        </p>
+
+    </div>
+
+    <div class="footer-column">
+
+        <h3>Explore</h3>
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Products</li>
+            <li>Hair Stages</li>
+            <li>Results</li>
+        </ul>
+
+    </div>
+
+    <div class="footer-column">
+
+        <h3>Products</h3>
+
+        <ul>
+            <li>Shampoos</li>
+            <li>Hair Oils</li>
+            <li>Serums</li>
+            <li>Hair Masks</li>
+            <li>Conditioners</li>
+        </ul>
+
+    </div>
+
+    <div class="footer-column">
+
+        <h3>Support</h3>
+
+        <ul>
+            <li>FAQs</li>
+            <li>Hair Guide</li>
+            <li>Product Guide</li>
+            <li>Contact</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    © 2026 VJSS Hair Care. All Rights Reserved.
+</div>
+
+</footer>
+
+
+<!-- ================= PRODUCT DETAIL MODAL ================= -->
+
+<div class="modal" id="productModal">
+
+<div class="modal-content">
+
+<button class="close" onclick="closeModal()">×</button>
+
+<div class="detail-grid">
+
+    <div class="detail-image">
+        <img id="detailImage" src="" alt="Product">
+    </div>
+
+    <div class="detail-info">
+
+        <div class="category" id="detailCategory"></div>
+
+        <h2 id="detailName"></h2>
+
+        <div class="price" id="detailPrice"></div>
+
+        <p class="description" id="detailDescription"></p>
+
+        <div class="detail-box">
+            <strong>Suitable For</strong>
+            <p id="detailSuitable"></p>
+        </div>
+
+        <h3>Benefits</h3>
+
+        <ul class="detail-list" id="detailBenefits"></ul>
+
+        <h3>Key Ingredients</h3>
+
+        <ul class="detail-list" id="detailIngredients"></ul>
+
+        <div class="detail-box">
+            <strong>How To Use</strong>
+            <p id="detailUsage"></p>
+        </div>
+
+        <div class="detail-box">
+            <strong>Recommended Frequency</strong>
+            <p id="detailFrequency"></p>
+        </div>
+
+        <button class="btn btn-primary"
+                id="detailAddButton"
+                style="width:100%;margin-top:15px;">
+            Add To Cart
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= CART ================= -->
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-header">
+
+    <h2>Your Cart</h2>
+
+    <button onclick="closeCart()">×</button>
+
+</div>
+
+<div class="cart-items" id="cartItems"></div>
+
+<div class="cart-footer">
+
+    <div class="cart-total">
+
+        <span>Total</span>
+
+        <span id="cartTotal">₹0</span>
+
+    </div>
+
+    <button class="checkout" onclick="checkout()">
+        Proceed To Checkout
+    </button>
+
+</div>
+
+</div>
+
+
+<!-- ================= CHATBOT ================= -->
+
+<button class="chat-button" onclick="toggleChat()">
+    💬
+</button>
+
+<div class="chat-window" id="chatWindow">
+
+<div class="chat-header">
+
+    <h3>VJSS Hair Assistant</h3>
+
+    <small>Ask me about hair care and products</small>
+
+</div>
+
+<div class="chat-messages" id="chatMessages">
+
+    <div class="message bot">
+        👋 Hello! I am the VJSS Hair Assistant.
+        <br><br>
+        You can ask me:
+        <br>
+        • Which shampoo is suitable?
+        <br>
+        • Which product is good for dry hair?
+        <br>
+        • What are the hair stages?
+        <br>
+        • How should I use hair oil?
+        <br>
+        • What products are available?
+    </div>
+
+</div>
+
+<div class="chat-input">
+
+    <input
+        type="text"
+        id="chatInput"
+        placeholder="Ask about your hair..."
+        onkeydown="if(event.key==='Enter') sendMessage()"
+    >
+
+    <button onclick="sendMessage()">➤</button>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   VJSS PRODUCT DATABASE
+========================================================= */
+const products = [
+
+    {
+        id: 1,
+        name: "VJSS Ayurvedic Growth Hair Oil",
+        category: "Oil",
+        audience: "Unisex",
+        price: 599,
+        oldPrice: 749,
+        rating: 4.8,
+        badge: "BESTSELLER",
+        image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A nourishing scalp and hair oil designed for regular hair-care routines and scalp massage.",
+
+        benefits: [
+            "Helps nourish the scalp",
+            "Supports softer and manageable hair",
+            "Suitable for regular oiling routines",
+            "Helps reduce the feeling of dry hair"
+        ],
+
+        ingredients:
+            "Coconut oil, almond oil, amla-inspired botanical extracts, hibiscus-inspired extracts and selected aromatic oils.",
+
+        usage:
+            "Apply a small amount to the scalp and hair lengths. Massage gently and leave according to your preferred routine before cleansing.",
+
+        suitable:
+            "Men and women looking for a traditional-inspired nourishing hair oil."
+    },
+
+
+    {
+        id: 2,
+        name: "VJSS Rosemary Scalp Oil",
+        category: "Oil",
+        audience: "Unisex",
+        price: 649,
+        oldPrice: 799,
+        rating: 4.7,
+        badge: "POPULAR",
+        image: "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A lightweight scalp oil concept inspired by rosemary-based hair-care routines.",
+
+        benefits: [
+            "Lightweight scalp nourishment",
+            "Suitable for massage routines",
+            "Helps improve the feel of dry scalp",
+            "Easy to include in weekly care"
+        ],
+
+        ingredients:
+            "Light carrier oils with rosemary-inspired botanical extract and nourishing plant oils.",
+
+        usage:
+            "Apply a small quantity to the scalp. Massage gently and cleanse after the recommended leave-in period.",
+
+        suitable:
+            "Adults looking for a lightweight scalp-oiling routine."
+    },
+
+
+    {
+        id: 3,
+        name: "VJSS Anti-Hair Fall Shampoo",
+        category: "Shampoo",
+        audience: "Unisex",
+        price: 449,
+        oldPrice: 549,
+        rating: 4.6,
+        badge: "NEW",
+        image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A cleansing shampoo concept for people who want a simple everyday scalp and hair cleansing routine.",
+
+        benefits: [
+            "Cleans scalp and hair",
+            "Removes excess oil and buildup",
+            "Leaves hair feeling refreshed",
+            "Suitable for routine cleansing"
+        ],
+
+        ingredients:
+            "Gentle cleansing agents with botanical-inspired conditioning ingredients.",
+
+        usage:
+            "Wet hair thoroughly. Apply shampoo to the scalp, massage gently and rinse completely.",
+
+        suitable:
+            "Men and women who want a regular cleansing shampoo."
+    },
+
+
+    {
+        id: 4,
+        name: "VJSS Anti-Dandruff Shampoo",
+        category: "Shampoo",
+        audience: "Unisex",
+        price: 499,
+        oldPrice: 599,
+        rating: 4.7,
+        badge: "SCALP CARE",
+        image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A scalp-focused cleansing product designed for routines targeting visible flakes and scalp buildup.",
+
+        benefits: [
+            "Cleans scalp buildup",
+            "Helps keep scalp feeling fresh",
+            "Supports regular scalp hygiene",
+            "Suitable for targeted routines"
+        ],
+
+        ingredients:
+            "Cleansing base with scalp-care ingredients and botanical extracts.",
+
+        usage:
+            "Massage gently into wet scalp, allow the product to remain briefly and rinse thoroughly.",
+
+        suitable:
+            "Adults experiencing occasional visible scalp flakes."
+    },
+
+
+    {
+        id: 5,
+        name: "VJSS Daily Gentle Shampoo",
+        category: "Shampoo",
+        audience: "Women",
+        price: 399,
+        oldPrice: 499,
+        rating: 4.5,
+        badge: "",
+        image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A gentle daily-style cleanser designed for people who prefer a lightweight washing routine.",
+
+        benefits: [
+            "Gentle cleansing",
+            "Helps remove daily buildup",
+            "Leaves hair feeling clean",
+            "Suitable for regular routines"
+        ],
+
+        ingredients:
+            "Mild cleansing ingredients with lightweight conditioning components.",
+
+        usage:
+            "Apply to wet scalp and hair, massage gently and rinse.",
+
+        suitable:
+            "Women looking for a gentle everyday shampoo."
+    },
+
+
+    {
+        id: 6,
+        name: "VJSS Smooth & Shine Conditioner",
+        category: "Conditioner",
+        audience: "Women",
+        price: 449,
+        oldPrice: 549,
+        rating: 4.8,
+        badge: "BESTSELLER",
+        image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A smoothing conditioner designed to improve the feel and manageability of dry or rough hair lengths.",
+
+        benefits: [
+            "Improves softness",
+            "Helps reduce the feeling of roughness",
+            "Supports easier combing",
+            "Adds a smoother finish"
+        ],
+
+        ingredients:
+            "Conditioning agents, plant oils and botanical-inspired moisturizing ingredients.",
+
+        usage:
+            "After shampooing, apply mainly to mid-lengths and ends. Leave briefly and rinse.",
+
+        suitable:
+            "Dry, rough, frizzy or difficult-to-manage hair."
+    },
+
+
+    {
+        id: 7,
+        name: "VJSS Anti-Frizz Serum",
+        category: "Serum",
+        audience: "Women",
+        price: 549,
+        oldPrice: 649,
+        rating: 4.7,
+        badge: "FRIZZ CONTROL",
+        image: "https://images.unsplash.com/photo-1556228852-80b6e5c1f8b3?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A lightweight finishing serum designed to help hair look smoother and more polished.",
+
+        benefits: [
+            "Helps control the appearance of frizz",
+            "Adds shine",
+            "Makes hair feel smoother",
+            "Useful before styling"
+        ],
+
+        ingredients:
+            "Lightweight conditioning and smoothing ingredients.",
+
+        usage:
+            "Use a small amount on damp or dry hair lengths. Avoid excessive application on the scalp.",
+
+        suitable:
+            "People dealing with dry-looking or frizzy hair."
+    },
+
+
+    {
+        id: 8,
+        name: "VJSS Scalp Detox Serum",
+        category: "Serum",
+        audience: "Men",
+        price: 599,
+        oldPrice: 699,
+        rating: 4.6,
+        badge: "MEN",
+        image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A scalp-focused serum concept designed for men who want a simple scalp-care routine.",
+
+        benefits: [
+            "Lightweight scalp application",
+            "Helps support a clean-feeling scalp",
+            "Easy to include in weekly routines",
+            "Non-heavy application"
+        ],
+
+        ingredients:
+            "Light botanical-inspired scalp-care ingredients.",
+
+        usage:
+            "Apply small amounts directly to the scalp and massage gently according to product instructions.",
+
+        suitable:
+            "Men looking for targeted scalp care."
+    },
+
+
+    {
+        id: 9,
+        name: "VJSS Hair Repair Mask",
+        category: "Mask",
+        audience: "Women",
+        price: 649,
+        oldPrice: 749,
+        rating: 4.8,
+        badge: "REPAIR",
+        image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A richer conditioning treatment for dry, rough and heat-styled hair lengths.",
+
+        benefits: [
+            "Deep conditioning feel",
+            "Helps soften dry lengths",
+            "Improves manageability",
+            "Useful as a weekly treatment"
+        ],
+
+        ingredients:
+            "Conditioning base with plant oils and moisturizing ingredients.",
+
+        usage:
+            "Apply after shampooing to hair lengths. Leave for several minutes and rinse thoroughly.",
+
+        suitable:
+            "Dry, damaged-feeling or heat-styled hair."
+    },
+
+
+    {
+        id: 10,
+        name: "VJSS Onion & Amla Hair Oil",
+        category: "Oil",
+        audience: "Men",
+        price: 499,
+        oldPrice: 599,
+        rating: 4.5,
+        badge: "MEN",
+        image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A traditional-inspired oil combining onion and amla-inspired hair-care ingredients.",
+
+        benefits: [
+            "Scalp nourishment",
+            "Helps condition hair",
+            "Suitable for oil massage",
+            "Supports a consistent routine"
+        ],
+
+        ingredients:
+            "Carrier oils, amla-inspired botanical extract and onion-inspired extract.",
+
+        usage:
+            "Apply to scalp and lengths. Massage gently before washing.",
+
+        suitable:
+            "Men interested in traditional-inspired hair oiling."
+    },
+
+
+    {
+        id: 11,
+        name: "VJSS Men's Daily Shampoo",
+        category: "Shampoo",
+        audience: "Men",
+        price: 399,
+        oldPrice: 499,
+        rating: 4.5,
+        badge: "MEN",
+        image: "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A simple everyday shampoo designed for men's regular scalp cleansing routine.",
+
+        benefits: [
+            "Removes excess oil",
+            "Cleans scalp",
+            "Fresh hair feel",
+            "Simple everyday routine"
+        ],
+
+        ingredients:
+            "Mild cleansing agents and conditioning ingredients.",
+
+        usage:
+            "Apply to wet hair, massage scalp gently and rinse.",
+
+        suitable:
+            "Men looking for everyday hair cleansing."
+    },
+
+
+    {
+        id: 12,
+        name: "VJSS Men's Hair Styling Cream",
+        category: "Styling",
+        audience: "Men",
+        price: 349,
+        oldPrice: 449,
+        rating: 4.4,
+        badge: "STYLE",
+        image: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A lightweight styling cream for everyday hairstyles without an overly heavy feel.",
+
+        benefits: [
+            "Easy everyday styling",
+            "Natural-looking finish",
+            "Helps manage flyaways",
+            "Suitable for short and medium hair"
+        ],
+
+        ingredients:
+            "Light styling base with conditioning components.",
+
+        usage:
+            "Take a small amount, warm between palms and distribute through hair.",
+
+        suitable:
+            "Men who want easy everyday styling."
+    },
+
+
+    {
+        id: 13,
+        name: "VJSS Hair Growth Support Serum",
+        category: "Serum",
+        audience: "Unisex",
+        price: 699,
+        oldPrice: 849,
+        rating: 4.8,
+        badge: "ADVANCED",
+        image: "https://images.unsplash.com/photo-1619451334792-150fd785ee74?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A scalp-care serum designed to complement a consistent hair-care routine.",
+
+        benefits: [
+            "Lightweight scalp application",
+            "Supports scalp-care routine",
+            "Easy daily application",
+            "Non-heavy feel"
+        ],
+
+        ingredients:
+            "Botanical-inspired scalp-care ingredients and lightweight conditioning agents.",
+
+        usage:
+            "Apply according to the product directions and massage gently into the scalp.",
+
+        suitable:
+            "Men and women seeking a targeted scalp-care routine."
+    },
+
+
+    {
+        id: 14,
+        name: "VJSS Keratin Care Shampoo",
+        category: "Shampoo",
+        audience: "Women",
+        price: 549,
+        oldPrice: 649,
+        rating: 4.6,
+        badge: "SMOOTH",
+        image: "https://images.unsplash.com/photo-1585751119414-ef2636f8aede?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A smoothing shampoo concept designed for hair that feels rough or difficult to manage.",
+
+        benefits: [
+            "Cleans gently",
+            "Helps improve smoothness",
+            "Supports manageable hair",
+            "Suitable for routine washing"
+        ],
+
+        ingredients:
+            "Gentle cleansers with conditioning and protein-inspired ingredients.",
+
+        usage:
+            "Apply to wet scalp and hair, massage and rinse thoroughly.",
+
+        suitable:
+            "Rough, dry or chemically treated-feeling hair."
+    },
+
+
+    {
+        id: 15,
+        name: "VJSS Curl Care Conditioner",
+        category: "Conditioner",
+        audience: "Women",
+        price: 499,
+        oldPrice: 599,
+        rating: 4.7,
+        badge: "CURLS",
+        image: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A rich conditioner designed for wavy and curly hair that needs softness and manageability.",
+
+        benefits: [
+            "Improves softness",
+            "Supports curl manageability",
+            "Helps reduce dry feel",
+            "Makes detangling easier"
+        ],
+
+        ingredients:
+            "Moisturizing conditioners and plant-oil-inspired ingredients.",
+
+        usage:
+            "Apply from mid-lengths to ends after shampooing. Leave briefly and rinse.",
+
+        suitable:
+            "Wavy, curly and textured hair."
+    },
+
+
+    {
+        id: 16,
+        name: "VJSS Anti-Breakage Hair Cream",
+        category: "Cream",
+        audience: "Unisex",
+        price: 449,
+        oldPrice: 549,
+        rating: 4.5,
+        badge: "CARE",
+        image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A leave-in hair cream designed to improve softness and manageability of hair lengths.",
+
+        benefits: [
+            "Helps reduce rough feel",
+            "Improves manageability",
+            "Suitable for dry lengths",
+            "Light styling support"
+        ],
+
+        ingredients:
+            "Leave-in conditioning ingredients and plant-inspired emollients.",
+
+        usage:
+            "Apply a small amount to damp or dry lengths and style as desired.",
+
+        suitable:
+            "Men and women with dry or difficult-to-manage lengths."
+    },
+
+
+    {
+        id: 17,
+        name: "VJSS Scalp Cooling Tonic",
+        category: "Tonic",
+        audience: "Men",
+        price: 399,
+        oldPrice: 499,
+        rating: 4.4,
+        badge: "FRESH",
+        image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A refreshing scalp tonic concept for people who want a lightweight scalp-care step.",
+
+        benefits: [
+            "Refreshing scalp feel",
+            "Lightweight application",
+            "Easy after-wash routine",
+            "Suitable for regular use"
+        ],
+
+        ingredients:
+            "Refreshing botanical-inspired ingredients and lightweight conditioning components.",
+
+        usage:
+            "Apply a small quantity to the scalp and massage gently.",
+
+        suitable:
+            "Men looking for a refreshing scalp-care product."
+    },
+
+
+    {
+        id: 18,
+        name: "VJSS Herbal Hair Mist",
+        category: "Mist",
+        audience: "Women",
+        price: 349,
+        oldPrice: 449,
+        rating: 4.5,
+        badge: "FRESH",
+        image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A lightweight hair mist designed for refreshing hair between regular wash days.",
+
+        benefits: [
+            "Refreshing feel",
+            "Lightweight application",
+            "Helps hair feel manageable",
+            "Convenient for daytime use"
+        ],
+
+        ingredients:
+            "Water-based conditioning formula with botanical-inspired extracts.",
+
+        usage:
+            "Mist lightly over hair lengths. Avoid saturating the hair.",
+
+        suitable:
+            "Women looking for a lightweight hair refresh."
+    },
+
+
+    {
+        id: 19,
+        name: "VJSS Complete Hair Care Kit",
+        category: "Kit",
+        audience: "Unisex",
+        price: 1499,
+        oldPrice: 1899,
+        rating: 4.9,
+        badge: "BEST VALUE",
+        image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A complete routine concept combining cleansing, conditioning, nourishment and finishing care.",
+
+        benefits: [
+            "Complete hair-care routine",
+            "Multiple products in one kit",
+            "Suitable for routine building",
+            "Convenient gifting option"
+        ],
+
+        ingredients:
+            "Varies according to individual products included in the kit.",
+
+        usage:
+            "Use each product according to its individual directions.",
+
+        suitable:
+            "Men and women who want to build a complete routine."
+    },
+
+
+    {
+        id: 20,
+        name: "VJSS Premium Hair Wellness Kit",
+        category: "Kit",
+        audience: "Unisex",
+        price: 1999,
+        oldPrice: 2499,
+        rating: 5.0,
+        badge: "PREMIUM",
+        image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80",
+
+        description:
+            "A premium hair-care collection designed to provide multiple routine steps in one coordinated set.",
+
+        benefits: [
+            "Premium routine experience",
+            "Nourishment and cleansing steps",
+            "Conditioning support",
+            "Suitable as a complete routine"
+        ],
+
+        ingredients:
+            "Varies by product combination included in the premium kit.",
+
+        usage:
+            "Follow individual product instructions and build a routine according to your hair needs.",
+
+        suitable:
+            "Anyone looking for a complete premium hair-care routine."
+    }
+
+];
+
+
+
+/* =========================================================
+   DISPLAY PRODUCTS
+========================================================= */
+
+let currentProducts = products;
+
+function displayProducts(list){
+
+    const grid = document.getElementById("productsGrid");
+
+    grid.innerHTML = "";
+
+    if(list.length === 0){
+
+        grid.innerHTML = `
+            <div style="grid-column:1/-1;text-align:center;padding:50px;">
+                <h3>No products found</h3>
+                <p style="margin-top:10px;color:#66736d;">
+                    Try another search.
+                </p>
+            </div>
+        `;
+
+        return;
+    }
+
+    list.forEach(product => {
+
+        grid.innerHTML += `
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                src="${product.image}"
+                alt="${product.name}"
+                loading="lazy"
+                >
+
+                <span class="badge">
+                    ${product.audience === "all" ? "ALL" : product.audience.toUpperCase()}
+                </span>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="category">
+                    ${product.category}
+                </div>
+
+                <h3>${product.name}</h3>
+
+                <p>${product.description}</p>
+
+                <div class="price">
+                    ₹${product.price}
+                </div>
+
+                <div class="product-buttons">
+
+                    <button
+                    class="details-btn"
+                    onclick="showDetails(${product.id})">
+                        Details
+                    </button>
+
+                    <button
+                    class="add-btn"
+                    onclick="addToCart(${product.id})">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+function filterProducts(category,button){
+
+    document.querySelectorAll(".category-buttons button")
+    .forEach(btn => btn.classList.remove("active"));
+
+    button.classList.add("active");
+
+    if(category === "all"){
+        currentProducts = products;
+    }
+    else if(category === "men"){
+        currentProducts = products.filter(p =>
+            p.audience === "men" || p.audience === "all"
+        );
+    }
+    else if(category === "women"){
+        currentProducts = products.filter(p =>
+            p.audience === "women" || p.audience === "all"
+        );
+    }
+    else{
+        currentProducts = products.filter(p =>
+            p.category === category
+        );
+    }
+
+    displayProducts(currentProducts);
+
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+function searchProducts(){
+
+    const value =
+        document.getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+    const results = products.filter(product =>
+
+        product.name.toLowerCase().includes(value) ||
+        product.description.toLowerCase().includes(value) ||
+        product.category.toLowerCase().includes(value) ||
+        product.audience.toLowerCase().includes(value)
+
+    );
+
+    displayProducts(results);
+
+    document.getElementById("products")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+document.getElementById("searchInput")
+.addEventListener("keyup",function(event){
+
+    if(event.key === "Enter"){
+        searchProducts();
+    }
+
+});
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+function showDetails(id){
+
+    const product =
+        products.find(p => p.id === id);
+
+    if(!product) return;
+
+    document.getElementById("detailImage").src =
+        product.image;
+
+    document.getElementById("detailCategory").innerText =
+        product.category.toUpperCase();
+
+    document.getElementById("detailName").innerText =
+        product.name;
+
+    document.getElementById("detailPrice").innerText =
+        "₹" + product.price;
+
+    document.getElementById("detailDescription").innerText =
+        product.description;
+
+    document.getElementById("detailSuitable").innerText =
+        product.suitable;
+
+    document.getElementById("detailUsage").innerText =
+        product.usage;
+
+    document.getElementById("detailFrequency").innerText =
+        product.frequency;
+
+
+    const benefits =
+        document.getElementById("detailBenefits");
+
+    benefits.innerHTML = "";
+
+    product.benefits.forEach(item => {
+
+        benefits.innerHTML += `
+            <li>${item}</li>
+        `;
+
+    });
+
+
+    const ingredients =
+        document.getElementById("detailIngredients");
+
+    ingredients.innerHTML = "";
+
+    product.ingredients.forEach(item => {
+
+        ingredients.innerHTML += `
+            <li>${item}</li>
+        `;
+
+    });
+
+
+    document.getElementById("detailAddButton")
+    .onclick = function(){
+
+        addToCart(product.id);
+
+        closeModal();
+
+    };
+
+
+    document
+    .getElementById("productModal")
+    .classList.add("active");
+
+}
+
+function closeModal(){
+
+    document
+    .getElementById("productModal")
+    .classList.remove("active");
+
+}
+
+
+/* =========================================================
+   CART
+========================================================= */
+
+let cart =
+    JSON.parse(localStorage.getItem("vjssCart")) || [];
+
+
+function saveCart(){
+
+    localStorage.setItem(
+        "vjssCart",
+        JSON.stringify(cart)
+    );
+
+}
+
+
+function addToCart(id){
+
+    const product =
+        products.find(p => p.id === id);
+
+    if(!product) return;
+
+    const existing =
+        cart.find(item => item.id === id);
+
+    if(existing){
+
+        existing.quantity++;
+
+    }
+    else{
+
+        cart.push({
+            id:id,
+            quantity:1
+        });
+
+    }
+
+    saveCart();
+
+    updateCart();
+
+    alert(product.name + " added to cart!");
+
+}
+
+
+function updateCart(){
+
+    const cartItems =
+        document.getElementById("cartItems");
+
+    cartItems.innerHTML = "";
+
+    let total = 0;
+    let count = 0;
+
+
+    if(cart.length === 0){
+
+        cartItems.innerHTML = `
+            <div style="text-align:center;padding:50px 10px;color:#68756f;">
+                <div style="font-size:50px;">🛒</div>
+                <h3>Your cart is empty</h3>
+                <p style="margin-top:10px;">
+                    Add some VJSS hair-care products.
+                </p>
+            </div>
+        `;
+
+    }
+
+
+    cart.forEach(item => {
+
+        const product =
+            products.find(p => p.id === item.id);
+
+        if(!product) return;
+
+        const itemTotal =
+            product.price * item.quantity;
+
+        total += itemTotal;
+
+        count += item.quantity;
+
+
+        cartItems.innerHTML += `
+
+        <div class="cart-item">
+
+            <img
+            src="${product.image}"
+            alt="${product.name}"
+            >
+
+            <div class="cart-item-info">
+
+                <h4>${product.name}</h4>
+
+                <p>₹${itemTotal}</p>
+
+                <div class="qty">
+
+                    <button onclick="changeQuantity(${product.id},-1)">
+                        −
+                    </button>
+
+                    <span>${item.quantity}</span>
+
+                    <button onclick="changeQuantity(${product.id},1)">
+                        +
+                    </button>
+
+                    <button
+                    class="remove"
+                    onclick="removeFromCart(${product.id})">
+                        Remove
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+
+    document.getElementById("cartTotal")
+    .innerText = "₹" + total;
+
+    document.getElementById("cartCount")
+    .innerText = count;
+
+}
+
+
+function changeQuantity(id,value){
+
+    const item =
+        cart.find(item => item.id === id);
+
+    if(!item) return;
+
+    item.quantity += value;
+
+    if(item.quantity <= 0){
+
+        cart =
+            cart.filter(item => item.id !== id);
+
+    }
+
+    saveCart();
+
+    updateCart();
+
+}
+
+
+function removeFromCart(id){
+
+    cart =
+        cart.filter(item => item.id !== id);
+
+    saveCart();
+
+    updateCart();
+
+}
+
+
+function openCart(){
+
+    updateCart();
+
+    document
+    .getElementById("cartPanel")
+    .classList.add("open");
+
+}
+
+
+function closeCart(){
+
+    document
+    .getElementById("cartPanel")
+    .classList.remove("open");
+
+}
+
+
+function checkout(){
+
+    if(cart.length === 0){
+
+        alert("Your cart is empty.");
+
+        return;
+
+    }
+
+    alert(
+        "VJSS Checkout Demo\n\n" +
+        "Your products are ready for checkout.\n\n" +
+        "Connect a payment gateway and backend here for a real online store."
+    );
+
+}
+
+
+/* =========================================================
+   CHATBOT
+========================================================= */
+
+function toggleChat(){
+
+    document
+    .getElementById("chatWindow")
+    .classList.toggle("open");
+
+}
+
+
+function addBotMessage(text){
+
+    const messages =
+        document.getElementById("chatMessages");
+
+    messages.innerHTML += `
+        <div class="message bot">
+            ${text}
+        </div>
+    `;
+
+    messages.scrollTop =
+        messages.scrollHeight;
+
+}
+
+
+function addUserMessage(text){
+
+    const messages =
+        document.getElementById("chatMessages");
+
+    messages.innerHTML += `
+        <div class="message user">
+            ${text}
+        </div>
+    `;
+
+    messages.scrollTop =
+        messages.scrollHeight;
+
+}
+
+
+function sendMessage(){
+
+    const input =
+        document.getElementById("chatInput");
+
+    const text =
+        input.value.trim();
+
+    if(!text) return;
+
+    addUserMessage(text);
+
+    input.value = "";
+
+    setTimeout(() => {
+
+        const reply =
+            chatbotResponse(text);
+
+        addBotMessage(reply);
+
+    },500);
+
+}
+
+
+function chatbotResponse(message){
+
+    const text =
+        message.toLowerCase();
+
+
+    if(
+        text.includes("hello") ||
+        text.includes("hi") ||
+        text.includes("hey")
+    ){
+
+        return `
+            👋 Hello! Welcome to VJSS Hair Care.
+            <br><br>
+            I can help you explore products, hair stages,
+            routines and general hair-care information.
+        `;
+
+    }
+
+
+    if(
+        text.includes("dry hair") ||
+        text.includes("dry")
+    ){
+
+        return `
+            💧 For dry-feeling hair, explore:
+            <br><br>
+            • VJSS Moisture Repair Shampoo
+            <br>
+            • VJSS Deep Repair Hair Mask
+            <br>
+            • VJSS Aloe Hydration Mask
+            <br>
+            • VJSS Anti-Dryness Hair Cream
+            <br><br>
+            A conditioner can also help improve softness and manageability.
+        `;
+
+    }
+
+
+    if(
+        text.includes("dandruff") ||
+        text.includes("flakes")
+    ){
+
+        return `
+            🌿 You can explore the
+            <strong>VJSS Anti-Dandruff Care Shampoo</strong>.
+            <br><br>
+            If persistent flaking, itching or scalp inflammation occurs,
+            consider consulting a qualified dermatologist.
+        `;
+
+    }
+
+
+    if(
+        text.includes("hair fall") ||
+        text.includes("hair loss") ||
+        text.includes("falling")
+    ){
+
+        return `
+            🌱 Hair shedding can have many different causes.
+            <br><br>
+            VJSS products can support a cosmetic hair-care routine,
+            but they cannot guarantee treatment of hair loss.
+            <br><br>
+            If hair loss is sudden, severe or persistent,
+            professional medical evaluation is recommended.
+        `;
+
+    }
+
+
+    if(
+        text.includes("shampoo")
+    ){
+
+        return `
+            🧴 VJSS has several shampoo options:
+            <br><br>
+            • Herbal Balance Shampoo
+            <br>
+            • Anti-Dandruff Care Shampoo
+            <br>
+            • Moisture Repair Shampoo
+            <br>
+            • Men Active Shampoo
+            <br><br>
+            Choose according to your scalp and hair needs.
+        `;
+
+    }
+
+
+    if(
+        text.includes("oil") ||
+        text.includes("oiling")
+    ){
+
+        return `
+            🌿 VJSS offers:
+            <br><br>
+            • Nourishing Hair Oil
+            <br>
+            • Bhringraj Hair Oil
+            <br><br>
+            For a basic pre-wash routine, apply a suitable amount,
+            massage gently and wash according to your normal schedule.
+        `;
+
+    }
+
+
+    if(
+        text.includes("serum")
+    ){
+
+        return `
+            ✨ VJSS has:
+            <br><br>
+            • Rosemary Scalp Serum
+            <br>
+            • Hair Growth Support Serum
+            <br>
+            • Anti-Frizz Hair Serum
+            <br>
+            • Scalp Detox Serum
+        `;
+
+    }
+
+
+    if(
+        text.includes("men") ||
+        text.includes("man")
+    ){
+
+        return `
+            👨 VJSS has products suitable for men's routines,
+            including:
+            <br><br>
+            • Men Active Shampoo
+            <br>
+            • Men Scalp Conditioner
+            <br>
+            • Scalp Detox Serum
+            <br>
+            • Men's Complete Hair Kit
+        `;
+
+    }
+
+
+    if(
+        text.includes("women") ||
+        text.includes("woman") ||
+        text.includes("girl")
+    ){
+
+        return `
+            👩 VJSS has several products suitable for women's
+            hair-care routines, including:
+            <br><br>
+            • Moisture Repair Shampoo
+            <br>
+            • Deep Repair Hair Mask
+            <br>
+            • Anti-Frizz Hair Serum
+            <br>
+            • Women's Hair Wellness Kit
+        `;
+
+    }
+
+
+    if(
+        text.includes("stage") ||
+        text.includes("stages")
+    ){
+
+        return `
+            📊 VJSS uses a simple four-stage educational guide:
+            <br><br>
+            <strong>Stage 1:</strong> Healthy & Balanced
+            <br>
+            <strong>Stage 2:</strong> Early Concerns
+            <br>
+            <strong>Stage 3:</strong> Visible Thinning
+            <br>
+            <strong>Stage 4:</strong> Advanced Hair Loss
+            <br><br>
+            Scroll to the Hair Stages section to learn more.
+        `;
+
+    }
+
+
+    if(
+        text.includes("price") ||
+        text.includes("cost")
+    ){
+
+        return `
+            💰 VJSS products currently shown on this demo website
+            range from approximately ₹399 to ₹1,499.
+            <br><br>
+            Open any product to see its individual price and details.
+        `;
+
+    }
+
+
+    if(
+        text.includes("cart") ||
+        text.includes("buy") ||
+        text.includes("purchase")
+    ){
+
+        return `
+            🛒 To purchase:
+            <br><br>
+            1. Open any product.
+            <br>
+            2. Click <strong>Add To Cart</strong>.
+            <br>
+            3. Open the Cart.
+            <br>
+            4. Review quantities.
+            <br>
+            5. Select Checkout.
+            <br><br>
+            This demo needs a payment gateway and backend before
+            accepting real payments.
+        `;
+
+    }
+
+
+    if(
+        text.includes("routine")
+    ){
+
+        return `
+            📅 A simple routine can include:
+            <br><br>
+            1. Cleanse
+            <br>
+            2. Condition
+            <br>
+            3. Nourish
+            <br>
+            4. Protect
+            <br>
+            5. Stay consistent
+            <br><br>
+            Your exact routine should depend on your hair and scalp needs.
+        `;
+
+    }
+
+
+    return `
+        🤔 I can help with:
+        <br><br>
+        • Products
+        <br>
+        • Shampoo
+        <br>
+        • Hair oil
+        <br>
+        • Serum
+        <br>
+        • Dry hair
+        <br>
+        • Dandruff
+        <br>
+        • Hair stages
+        <br>
+        • Men's hair care
+        <br>
+        • Women's hair care
+        <br>
+        • Hair routine
+        <br>
+        • Cart
+        <br><br>
+        Try asking one of these questions.
+    `;
+
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+function toggleFAQ(button){
+
+    const item =
+        button.parentElement;
+
+    item.classList.toggle("open");
+
+    const symbol =
+        button.querySelector("span");
+
+    symbol.innerText =
+        item.classList.contains("open")
+        ? "−"
+        : "+";
+
+}
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+displayProducts(products);
+
+updateCart();
+
+
+/* Close modal by clicking outside */
+
+document
+.getElementById("productModal")
+.addEventListener("click",function(event){
+
+    if(event.target === this){
+
+        closeModal();
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
+```
